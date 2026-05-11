@@ -1,6 +1,6 @@
 import { CalculatorCore } from "../core/calculator-core.js";
-import { createSecretEngine } from "core/sercret-engine.js";
-import { StorageEngine } from "core/storage-engine.js";
+import { createSecretEngine } from "/core/sercret-engine.js";
+import { StorageEngine } from "/core/storage-engine.js";
 
 const displayMain = document.getElementById("display-main");
 const displaySecondary = document.getElementById("display-secondary");
