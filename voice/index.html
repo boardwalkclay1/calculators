@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Voice Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../core/base.css" />
+    <link rel="stylesheet" href="./voice.css" />
+  </head>
+
+  <body>
+    <div class="calculator-shell voice-theme">
+      <div class="calculator-header">
+        <div class="calc-title">CALCULATOR</div>
+        <div class="calc-mode-pill">
+          <span class="calc-mode-dot"></span>
+          <span>Standard</span>
+        </div>
+      </div>
+
+      <div class="calc-display">
+        <div class="calc-display-secondary" id="display-secondary"></div>
+        <div class="calc-display-main" id="display-main">0</div>
+      </div>
+
+      <div class="calc-grid">
+        <button class="calc-btn calc-btn-ghost" data-action="ac">AC</button>
+        <button class="calc-btn calc-btn-ghost" data-action="sign">±</button>
+        <button class="calc-btn calc-btn-ghost" data-action="percent">%</button>
+        <button class="calc-btn calc-btn-operator" data-op="÷">÷</button>
+
+        <button class="calc-btn" data-digit="7">7</button>
+        <button class="calc-btn" data-digit="8">8</button>
+        <button class="calc-btn" data-digit="9">9</button>
+        <button class="calc-btn calc-btn-operator" data-op="×">×</button>
+
+        <button class="calc-btn" data-digit="4">4</button>
+        <button class="calc-btn" data-digit="5">5</button>
+        <button class="calc-btn" data-digit="6">6</button>
+        <button class="calc-btn calc-btn-operator" data-op="-">−</button>
+
+        <button class="calc-btn" data-digit="1">1</button>
+        <button class="calc-btn" data-digit="2">2</button>
+        <button class="calc-btn" data-digit="3">3</button>
+        <button class="calc-btn calc-btn-operator" data-op="+">+</button>
+
+        <button class="calc-btn" data-digit="0">0</button>
+        <button class="calc-btn" data-action="dot">.</button>
+        <button class="calc-btn calc-btn-ghost" data-action="noop"></button>
+        <button class="calc-btn calc-btn-accent" data-action="equals">=</button>
+      </div>
+
+      <div class="calc-footer">
+        <span>456 → record</span>
+        <span>** → vault</span>
+      </div>
+
+      <div class="secret-panel" id="voice-panel">
+        <div class="secret-header">
+          <div class="secret-title">VOICE VAULT</div>
+          <button class="secret-close" id="voice-close">Close</button>
+        </div>
+        <div class="secret-body" id="voice-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./voice.js"></script>
+  </body>
+</html>
