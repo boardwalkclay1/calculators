@@ -1,0 +1,7 @@
+.contacts-theme {
+  background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%);
+}
+
+.contacts-theme .calc-btn-accent {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
